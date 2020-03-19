@@ -1,6 +1,6 @@
 "Item"
 	{
-	"Type"		"ITEM_NONAME_TOGGLEABLE_OBS"
+	"Type"		"ITEM_OBSERVATION_ROOM"
 	"Editor"
 		{
 		"SubType"

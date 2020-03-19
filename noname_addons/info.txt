@@ -1,13 +1,18 @@
 "ID" "NONAME_ITEMS"
 "Name" "NoName's Addons"
-"Item"
+"Overrides"
 	{
-	"ID" "ITEM_NONAME_TOGGLEABLE_OBS"
-	"Version"
+	"Item"
 		{
-		"Styles"
+		"ID" "ITEM_OBSERVATION_ROOM"
+		"Version"
 			{
-			"ANY_STYLE" "obs_room_tgl"
+			"ID" "VER_TOGGLEABLE"
+			"Name" "Toggleable Large Obs. Room"
+			"Styles"
+				{
+				"ANY_STYLE" "obs_room"
+				}
 			}
 		}
 	}
