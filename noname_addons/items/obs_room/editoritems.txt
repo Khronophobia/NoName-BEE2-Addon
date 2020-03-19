@@ -21,6 +21,14 @@
 		"InvalidSurface"		"CEILING FLOOR"
 		"DesiredFacing"			"DESIRES_UP"
 		}
+	"Properties"
+		{
+		"StartEnabled"
+			{
+			"DefaultValue" "0"
+			"Index" "1"
+			}
+		}
 	"Exporting"
 		{
 		"Instances"
@@ -34,13 +42,14 @@
 				}
 			}
 
-		"TargetName"		"toggl_obs_large"
+		"TargetName"		"toggle_obs"
 		"Offset"		"64 64 64"
 		"Inputs"
 			{
 				"BEE2"
 					{
 					"Type" "AND"
+					"InvertVar" "$start_enabled"
 					"Enable_Cmd" "relay_on,Trigger,,0,-1"
 					"Disable_Cmd" "relay_off,Trigger,,0,-1"
 					}
