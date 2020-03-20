@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8419"
-	"mapversion" "21"
+	"mapversion" "22"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "21"
+	"mapversion" "22"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -54,7 +54,8 @@ entity
 	"angles" "-90 0 0"
 	"magnitude" "1"
 	"maxdelay" "1"
-	"parentname" "cam,light"
+	"parent_attachment_point" "light"
+	"parentname" "cam"
 	"spawnflags" "0"
 	"targetname" "spark"
 	"traillength" "1"
