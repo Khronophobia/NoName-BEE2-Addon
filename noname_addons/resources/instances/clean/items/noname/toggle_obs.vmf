@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8419"
-	"mapversion" "225"
+	"mapversion" "226"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -32,7 +32,7 @@ viewsettings
 world
 {
 	"id" "2"
-	"mapversion" "225"
+	"mapversion" "226"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -1086,7 +1086,6 @@ entity
 	{
 		"OnTrigger" "sound_onPlaySound0-1"
 		"OnTrigger" "flashlightTurnOff0-1"
-		"OnTrigger" "light_observation_roomTurnOff0-1"
 	}
 	"origin" "48 28 -128"
 	editor
@@ -1370,7 +1369,6 @@ entity
 	{
 		"OnTrigger" "sound_onPlaySound0-1"
 		"OnTrigger" "flashlightTurnOn0-1"
-		"OnTrigger" "light_observation_roomTurnOn0-1"
 	}
 	"origin" "48 44 -128"
 	editor
@@ -1465,8 +1463,8 @@ entity
 	"_constant_attn" "200000"
 	"_distance" "0"
 	"_fifty_percent_distance" "0"
-	"_light" "183 204 218 50"
-	"_lighthdr" "183 204 218 50"
+	"_light" "183 204 218 25"
+	"_lighthdr" "183 204 218 25"
 	"_lightscalehdr" "1"
 	"_linear_attn" "0"
 	"_quadratic_attn" "1"
