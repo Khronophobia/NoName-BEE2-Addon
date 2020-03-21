@@ -55,8 +55,8 @@
 					{
 					"Type" "AND"
 					"InvertVar" "$start_enabled"
-					"Enable_Cmd" "relay_on,Trigger,,0,-1"
-					"Disable_Cmd" "relay_off,Trigger,,0,-1"
+					"Enable_Cmd" "logic_enabled,SetStateATrue,,0,-1"
+					"Disable_Cmd" "logic_enabled,SetStateAFalse,,0,-1"
 					}
 			}
 		"OccupiedVoxels"
