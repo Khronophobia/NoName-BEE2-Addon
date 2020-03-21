@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8419"
-	"mapversion" "226"
+	"mapversion" "227"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -32,7 +32,7 @@ viewsettings
 world
 {
 	"id" "2"
-	"mapversion" "226"
+	"mapversion" "227"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -1042,15 +1042,37 @@ world
 }
 entity
 {
+	"id" "5950"
+	"classname" "logic_coop_manager"
+	"angles" "0 0 0"
+	"defaultplayerstatea" "0"
+	"defaultplayerstateb" "0"
+	"targetname" "enabled_logic"
+	connections
+	{
+		"OnChangeToAllTrue" "relay_onTrigger0-1"
+		"OnChangeToAnyFalse" "relay_offTrigger0-1"
+	}
+	"origin" "48 28 -112"
+	editor
+	{
+		"color" "0 100 250"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
 	"id" "5905"
 	"classname" "logic_relay"
 	"angles" "0 0 0"
 	"spawnflags" "0"
-	"startdisabled" "!$start_enabled"
+	"startdisabled" "0"
 	"targetname" "@relay_spawn_on_entrance"
 	connections
 	{
-		"OnTrigger" "relay_onTrigger0-1"
+		"OnTrigger" "enabled_logicSetStateATrue0-1"
 	}
 	"origin" "48 44 -112"
 	editor
