@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8419"
-	"mapversion" "22"
+	"mapversion" "24"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "22"
+	"mapversion" "24"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -53,13 +53,12 @@ entity
 	"classname" "env_spark"
 	"angles" "-90 0 0"
 	"magnitude" "1"
-	"maxdelay" "1"
-	"parent_attachment_point" "light"
+	"maxdelay" "2"
 	"parentname" "cam"
 	"spawnflags" "0"
 	"targetname" "spark"
 	"traillength" "1"
-	"origin" "16.7383 -19.1262 -44.6291"
+	"origin" "16.8397 0.658224 -43.3363"
 	editor
 	{
 		"color" "200 200 0"
