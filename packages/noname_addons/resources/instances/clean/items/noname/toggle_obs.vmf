@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8419"
-	"mapversion" "230"
+	"mapversion" "231"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -32,7 +32,7 @@ viewsettings
 world
 {
 	"id" "2"
-	"mapversion" "230"
+	"mapversion" "231"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -1063,7 +1063,6 @@ entity
 	"targetname" "relay_off"
 	connections
 	{
-		"OnTrigger" "sound_onPlaySound0-1"
 		"OnTrigger" "flashlightTurnOff0-1"
 	}
 	"origin" "48 28 -128"
@@ -1316,7 +1315,7 @@ entity
 	"colortransitiontime" "0.5"
 	"enableshadows" "1"
 	"farz" "1024"
-	"lightcolor" "123 156 181 400"
+	"lightcolor" "123 156 181 300"
 	"lightfov" "90"
 	"lightonlytarget" "0"
 	"lightworld" "1"
