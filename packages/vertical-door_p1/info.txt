@@ -1,0 +1,20 @@
+"ID" "KONCLAN_VERT_DOOR_P1"
+"Name" "NoName's Addons"
+"Prerequisites"
+	{
+	"Package" "KONCLAN_VERT_DOOR"
+	}
+"Overrides"
+	{
+	"Item"
+		{
+		"ID" "ITEM_VERT_DOOR"
+		"Version"
+			{
+			"Styles"
+				{
+				"BEE2_PORTAL_1" "vert_door_p1"
+				}
+			}
+		}
+	}
