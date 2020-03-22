@@ -33,6 +33,11 @@
 			"DefaultValue" "0"
 			"Index" "2"
 			}
+		"StartReversed"
+			{
+			"DefaultValue" "0"
+			"Index" "3"
+			}
 		}
 	"Exporting"
 		{
@@ -45,6 +50,7 @@
 				"BrushCount"		"8"
 				"BrushSideCount"	"48"
 				}
+			"bee2_obslight" "instances/BEE2/clean/items/noname/toggle_obs_light.vmf"
 			}
 
 		"TargetName"		"toggle_obs"
@@ -55,7 +61,7 @@
 					{
 					"Type" "AND"
 					"InvertVar" "$start_enabled"
-					"Enable_Cmd" "relay_on,Trigger,,0,-1"
+					"Enable_Cmd" "relay_on,Trigger,,0.1,-1"
 					"Disable_Cmd" "relay_off,Trigger,,0,-1"
 					}
 			}
