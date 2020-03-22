@@ -6,7 +6,7 @@
 		{
 		"" "A security camera that follows a player."
 		"" ""
-		"" "Start reversed makes the camera follow a ping instead of a player"
+		"" "* Start reversed makes the camera follow a ping instead of a player"
 		}
 	"infoURL"		"https://developer.valvesoftware.com/wiki/Portal_2_Puzzle_Maker/Observation_Room"
 	"Ent_count"     "6"
