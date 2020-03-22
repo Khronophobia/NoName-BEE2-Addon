@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8419"
-	"mapversion" "231"
+	"mapversion" "236"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -26,13 +26,13 @@ viewsettings
 	"bSnapToGrid" "1"
 	"bShowGrid" "1"
 	"bShowLogicalGrid" "0"
-	"nGridSpacing" "16"
+	"nGridSpacing" "32"
 	"bShow3DGrid" "0"
 }
 world
 {
 	"id" "2"
-	"mapversion" "231"
+	"mapversion" "236"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -1314,8 +1314,8 @@ entity
 	"cameraspace" "0"
 	"colortransitiontime" "0.5"
 	"enableshadows" "1"
-	"farz" "1024"
-	"lightcolor" "123 156 181 300"
+	"farz" "1600"
+	"lightcolor" "123 156 181 750"
 	"lightfov" "90"
 	"lightonlytarget" "0"
 	"lightworld" "1"
