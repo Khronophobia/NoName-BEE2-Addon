@@ -45,3 +45,25 @@
 			}
 		}
 	}
+"Item"
+	{
+	"ID" "ITEM_TSPEN_PORTAL_DOOR_ENTRY"
+	"Version"
+		{
+		"Styles"
+			{
+			"ANY_STYLE" "worldportal_entry"
+			}
+		}
+	}
+"Item"
+	{
+	"ID" "ITEM_TSPEN_PORTAL_DOOR_EXIT"
+	"Version"
+		{
+		"Styles"
+			{
+			"ANY_STYLE" "worldportal_exit"
+			}
+		}
+	}

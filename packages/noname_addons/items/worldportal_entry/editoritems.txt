@@ -1,0 +1,232 @@
+"Item"
+	{
+		"Type"			"ITEM_TSPEN_PORTAL_DOOR_ENTRY"
+		"Filter"		"TeamSpen210;BEE 2 Addons;TS - New Items"
+		"Author"		"TeamSpen210"
+		"Description"	"A worldportal packaged up into an exit/entry door. Wire ONE entry door to ONE exit door. For the entry door, inputs and the start enabled property work like normal, except they also affect the other door."
+		"Editor"
+		{
+			"SubType"
+			{
+				"Name"			"WorldPortal Door - Entry"
+				"Model"
+				{
+					"ModelName"		"tspen_wp_entry.3ds"
+					"TextureName"		"portal_door.png"
+				}
+				"Palette"
+				{
+					"Tooltip"	"WORLDPORTAL DOOR - ENTRY"
+					"Image"		"palette/door.png"
+					"Position"	"0 0 0"
+				}
+			}
+			"MovementHandle"		"HANDLE_4_DIRECTIONS"
+			"DesiredFacing"			"DESIRES_UP"
+		}
+		"Properties"
+		{
+			"ConnectionCount"
+			{
+				"DefaultValue"		"0"
+				"Index"		"1"
+			}
+			"StartEnabled"
+			{
+				"DefaultValue"		"1"
+				"Index"		"2"
+			}
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"				"instances/BEE2/clean/items/noname/worldportal_door/worldportal_entry.vmf"
+					"EntityCount"		"55"
+					"BrushCount"		"48"
+					"BrushSideCount"	"310"
+				}
+			}
+			//packer_additem:scripts/vscripts/worldportal_door.nut
+			//packer_additem:scripts/vscripts/worldportal_door_entry.nut
+			//packer_additem:scripts/vscripts/worldportal_door_exit.nut
+			"TargetName"		"wp_door_entry"
+			"Inputs"
+			{
+				"CONNECTION_STANDARD"
+				{
+					"Activate"		"instance:counter;Add"
+					"Deactivate"		"instance:counter;Subtract"
+				}
+			}
+			"Outputs"
+			{
+				"CONNECTION_STANDARD"
+				{
+					"Activate"		"instance:toggle_door_rl;OnTrigger"
+					"Deactivate"		"instance:portal_partner_rl;OnTrigger"
+				}
+			}
+			"Offset"		"64 64 64"
+			"OccupiedVoxels"
+			{
+				"Voxel"
+				{
+					"Pos"		"0 0 0"
+					"Surface"
+					{
+						"Normal"	"0 0 1"
+					}
+				}
+			}
+			"EmbeddedVoxels"
+			{
+				"Volume"
+				{
+					"Pos1"		"1 -1 0"
+					"Pos2"		"-1 1 -1"
+				}
+			}
+
+			"ConnectionPoints"
+			{
+				// top edge left to right
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"8 6 0"
+					"SignageOffset"		"9 7 0"
+					"Priority"  "1"
+					"GroupID"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"8 4 0"
+					"SignageOffset"		"9 5 0"
+					"Priority"  "1"
+					"GroupID"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"8 2 0"
+					"SignageOffset"		"9 3 0"
+					"Priority"  "1"
+					"GroupID"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"8 0 0"
+					"SignageOffset"		"9 1 0"
+					"Priority"  "1"
+					"GroupID"	"0"
+				}
+
+				// left edge top to bottom
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"6 -1 0"
+					"SignageOffset"		"7 -2 0"
+					"Priority"  "0"
+					"GroupID"	"1"
+				}
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"4 -1 0"
+					"SignageOffset"		"5 -2 0"
+					"Priority"  "1"
+					"GroupID"	"1"
+				}
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"2 -1 0"
+					"SignageOffset"		"3 -2 0"
+					"Priority"  "2"
+					"GroupID"	"1"
+				}
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"0 -1 0"
+					"SignageOffset"		"1 -2 0"
+					"Priority"  "3"
+					"GroupID"	"1"
+				}
+
+				// right edge top to bottom
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"6 8 0"
+					"SignageOffset"		"7 9 0"
+					"Priority"  "0"
+					"GroupID"	"2"
+				}
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"4 8 0"
+					"SignageOffset"		"5 9 0"
+					"Priority"  "1"
+					"GroupID"	"2"
+				}
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"2 8 0"
+					"SignageOffset"		"3 9 0"
+					"Priority"  "2"
+					"GroupID"	"2"
+				}
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"0 8 0"
+					"SignageOffset"		"1 9 0"
+					"Priority"  "3"
+					"GroupID"	"2"
+				}
+
+				// bottom edge left to right
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 6 0"
+					"SignageOffset"		"-2 7 0"
+					"Priority"  "2"
+					"GroupID"	"3"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 4 0"
+					"SignageOffset"		"-2 5 0"
+					"Priority"  "2"
+					"GroupID"	"3"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 2 0"
+					"SignageOffset"		"-2 3 0"
+					"Priority"  "2"
+					"GroupID"	"3"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 0 0"
+					"SignageOffset"		"-2 1 0"
+					"Priority"  "2"
+					"GroupID"	"3"
+				}
+			}
+		}
+	}

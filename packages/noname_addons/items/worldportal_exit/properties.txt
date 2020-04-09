@@ -1,0 +1,11 @@
+"Properties"
+	{
+	"Authors"		"NoName"
+	"Tags"			"Portal 2"
+	"Description" "A worldportal packaged up into an exit/entry door. Wire ONE entry door to ONE exit door. For the exit door, Weighted is a door with no extras, Cube is an exit door with a fizzler inside and Sphere is a door with a fizzler that auto-closes and locks itself when walked through."
+	"Ent_count"     "6"
+	"Icon"
+		{
+			"0"	"noname/clean/security_cam.png"
+		}
+	}
